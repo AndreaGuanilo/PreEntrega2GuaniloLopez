@@ -1,6 +1,5 @@
-.cards__card {
+.elements__card {
   background-color: #fff;
   border-radius: 1rem;
   overflow: hidden;
-  position: relative;
 }

@@ -1,9 +1,9 @@
-.profile__info {
+.profile__data {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 @media screen and (max-width: 576px) {
-  .profile__info {
+  .profile__data {
     text-align: center;
   }
 }

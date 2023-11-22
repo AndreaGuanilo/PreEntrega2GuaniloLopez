@@ -13,53 +13,75 @@
   <main id="main">
     <section class="profile">
       <img class="profile__image" src="./assets/img/profile__image.jpg" alt="Imagen de Jacques Cousteau - el explorador">
-      <div class="profile__info">
+      <div class="profile__data">
           <h1 class="profile__name">Jacques Cousteau</h1>
           <button class="profile__edit-button"></button>
-          <p class="profile__about">Explorador</p>
+          <p class="profile__occupation">Explorador</p>
       </div>
       <button class="profile__add-button"></button>
     </section>
-    <section id="popup">
-      <form class="popup popup_edit">
-        <div class="popup__container">
-          <h2 class="popup__title">Editar perfil</h2>
-          <input type="text" class="popup__input popup__input_name" placeholder="Nombre"/>
-          <input type="text" class="popup__input popup__input_about" placeholder="Acerca de mi"/>
-          <button type="submit" class="popup__submit">Guardar</button>
-          <input type="button" class="popup__close"/>
-        </div>
+    <section class="popup">
+      <form action="#" class="popup__container">
+        <h2 class="popup__title">Editar perfil</h2>
+        <input class="popup__input popup__input_name" type="text"  placeholder="Nombre"/>
+        <input class="popup__input popup__input_about" type="text" placeholder="Acerca de mi"/>
+        <button class="popup__submit">Guardar</button>
+        <button class="popup__close"></button>
       </form>
-      <form class="popup popup_add">
-        <div class="popup__container">
-          <h2 class="popup__title">Nuevo lugar</h2>
-          <input type="text" class="popup__input popup__input_title" placeholder="Título"/>
-          <input type="text" class="popup__input popup__input_url" placeholder="URL"/>
-          <button type="submit" class="popup__submit">Guardar</button>
-          <input type="button" class="popup__close"/>
-        </div>
-      </form>
-      <div class="popup popup_images">
-        <div class="popup__image-container">
-          <img class="popup__image"/>
-          <button class="popup__close"></button>
-          <h2 class="popup__description"></h2>
-        </div>
+    </section>
+    <section class="elements">
+      <div class="elements__card">
+        <img src="./assets/img/elements__card_1.jpg" alt="Coruscant" class="card__image"/>
+        <label for="card1" class="card__info">
+          <input class="card__like" type="checkbox" id="card1"/>
+          <span class="card__title">Coruscant</span>
+          <img src="" alt="">
+          <img src="./assets/img/icons/like-button.svg" alt="Un corazón para darle me gusta">
+        </label>
+      </div>
+      <div class="elements__card">
+        <img src="./assets/img/elements__card_2.png" alt="Pueblo Lavanda" class="card__image"/>
+        <label for="card2" class="card__info">
+          <input class="card__like" type="checkbox" id="card2"/>
+          <span class="card__title">Pueblo Lavanda</span>
+          <img src="./assets/img/icons/like-button.svg" alt="Un corazón para darle me gusta">
+        </label>
+      </div>
+      <div class="elements__card">
+        <img src="./assets/img/elements__card_3.png" alt="Minas Tirith - Gondor" class="card__image"/>
+        <label for="card3" class="card__info">
+          <input class="card__like" type="checkbox" id="card3"/>
+          <span class="card__title">Minas Tirith - Gondor</span>
+          <img src="./assets/img/icons/like-button.svg" alt="Un corazón para darle me gusta">
+        </label>
+      </div>
+      <div class="elements__card">
+        <img src="./assets/img/elements__card_4.jpg" alt="Pueblo de Ollantaytambo" class="card__image"/>
+        <label for="card4" class="card__info">
+          <input class="card__like" type="checkbox" id="card4"/>
+          <span class="card__title">Pueblo de Ollantaytambo</span>
+          <img src="./assets/img/icons/like-button.svg" alt="Un corazón para darle me gusta">
+        </label>
+      </div>
+      <div class="elements__card">
+        <img src="./assets/img/elements__card_5.jpg" alt="Reserva Nacional Pacaya Samiria" class="card__image"/>
+        <label for="card5" class="card__info">
+          <input class="card__like" type="checkbox" id="card5"/>
+          <span class="card__title">Reserva Nacional Pacaya Samiria</span>
+          <img src="./assets/img/icons/like-button.svg" alt="Un corazón para darle me gusta">
+        </label>
+      </div>
+      <div class="elements__card">
+        <img src="./assets/img/elements__card_6.jpg" alt="Reikiavik - Islandia" class="card__image"/>
+        <label for="card6" class="card__info">
+          <input class="card__like" type="checkbox" id="card6"/>
+          <span class="card__title">Reikiavik - Islandia</span>
+          <img src="./assets/img/icons/like-button.svg" alt="Un corazón para darle me gusta">
+        </label>
       </div>
     </section>
-    <template id="template__cards">
-      <div class="cards__card">
-        <img class="card__image"/>
-        <div class="card__menu">
-          <h2 class="card__title"></h2>
-          <div class="card__like-icon"></div>
-        </div>
-        <div class="card__delete"></div>
-      </div>
-    </template>
-    <section class="cards"></section>
   </main>
-  <footer class="footer">
+  <footer>
     <p class="footer__copyright">&copy; 2023 - Andrea Guanilo López</p>
   </footer>
   <script src="./javascript/script.js"></script>
