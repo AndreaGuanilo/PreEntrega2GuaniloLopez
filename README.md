@@ -21,4 +21,4 @@ Se usaron las estrategias para armar la página:
 
 ## :bookmark_tabs: Enlace
 
-* Enlace del proyecto: (https://andreaguanilo.github.io/web_project_around/)
+* Enlace del proyecto: (https://andreaguanilo.github.io/PreEntrega2GuaniloLopez/)
