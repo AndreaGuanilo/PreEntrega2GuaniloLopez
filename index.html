@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alrededor de los EEUU</title>
+  <link rel="stylesheet" href="./pages/index.css">
+</head>
+<body class="page">
+  <header class="header">
+    <img class="header__logo" src="./assets/img/header__logo.svg" alt="Logo Around the U.S">
+  </header>
+  <main id="main">
+    <section class="profile">
+      <img class="profile__image" src="./assets/img/profile__image.jpg" alt="Imagen de Jacques Cousteau - el explorador">
+      <div class="profile__info">
+          <h1 class="profile__name">Jacques Cousteau</h1>
+          <button class="profile__edit-button"></button>
+          <p class="profile__about">Explorador</p>
+      </div>
+      <button class="profile__add-button"></button>
+    </section>
+    <section id="popup">
+      <form class="popup popup_edit">
+        <div class="popup__container">
+          <h2 class="popup__title">Editar perfil</h2>
+          <input type="text" class="popup__input popup__input_name" placeholder="Nombre"/>
+          <input type="text" class="popup__input popup__input_about" placeholder="Acerca de mi"/>
+          <button type="submit" class="popup__submit">Guardar</button>
+          <input type="button" class="popup__close"/>
+        </div>
+      </form>
+      <form class="popup popup_add">
+        <div class="popup__container">
+          <h2 class="popup__title">Nuevo lugar</h2>
+          <input type="text" class="popup__input popup__input_title" placeholder="Título"/>
+          <input type="text" class="popup__input popup__input_url" placeholder="URL"/>
+          <button type="submit" class="popup__submit">Guardar</button>
+          <input type="button" class="popup__close"/>
+        </div>
+      </form>
+      <div class="popup popup_images">
+        <div class="popup__image-container">
+          <img class="popup__image"/>
+          <button class="popup__close"></button>
+          <h2 class="popup__description"></h2>
+        </div>
+      </div>
+    </section>
+    <template id="template__cards">
+      <div class="cards__card">
+        <img class="card__image"/>
+        <div class="card__menu">
+          <h2 class="card__title"></h2>
+          <div class="card__like-icon"></div>
+        </div>
+        <div class="card__delete"></div>
+      </div>
+    </template>
+    <section class="cards"></section>
+  </main>
+  <footer class="footer">
+    <p class="footer__copyright">&copy; 2023 - Andrea Guanilo López</p>
+  </footer>
+  <script src="./javascript/script.js"></script>
+</body>
+</html>
